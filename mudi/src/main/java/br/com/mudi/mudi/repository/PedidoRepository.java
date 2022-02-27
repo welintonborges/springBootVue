@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface PedidoRepository extends JpaRepository<Pedido, Integer> {
+public interface PedidoRepository extends JpaRepository<Pedido, Long> {
 
 
     @Cacheable("book")

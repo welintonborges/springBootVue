@@ -24,7 +24,7 @@ public class Pedido {
     private Long id;
 
     private String nomeProduto;
-    private BigDecimal valorNegociado;
+    private BigDecimal valorNegociavel;
     private LocalDate dataDaEntrega;
     private String urlProduto;
     private String urlImagem;
@@ -46,12 +46,15 @@ public class Pedido {
     public void setNomeProduto(String nomeProduto) {
         this.nomeProduto = nomeProduto;
     }
-    public BigDecimal getValorNegociado() {
-        return valorNegociado;
+
+    public BigDecimal getValorNegociavel() {
+        return valorNegociavel;
     }
-    public void setValorNegociado(BigDecimal valorNegociado) {
-        this.valorNegociado = valorNegociado;
+
+    public void setValorNegociavel(BigDecimal valorNegociavel) {
+        this.valorNegociavel = valorNegociavel;
     }
+
     public LocalDate getDataDaEntrega() {
         return dataDaEntrega;
     }
@@ -100,5 +103,6 @@ public class Pedido {
     public void setOfertas(List<Oferta> ofertas) {
         this.ofertas = ofertas;
     }
+
 
 }

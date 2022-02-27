@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.validation.Valid;
 
 
-@RestController
+@Controller
 @RequestMapping("pedido")
 public class PedidoController {
 
@@ -27,7 +27,7 @@ public class PedidoController {
     @Autowired
     private UserRepository userRepository;
 
-    @GetMapping("/formulario")
+    @GetMapping("formulario")
     public String formulario(RequisicaoNovoPedido requisicao) {
         return "pedido/formulario";
     }
